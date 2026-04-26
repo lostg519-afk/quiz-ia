@@ -1,2 +1,2 @@
 streamlit
-mistralai==1.1.0
+mistralai==0.4.2
