@@ -482,7 +482,7 @@ else:
             with st.spinner("🧠 Mistral analyse votre cours et génère le quiz…"):
                 try:
                     api_key = st.secrets["MISTRAL_API_KEY"]
-                    client = Mistral(api_key=api_key)
+                    client = MistralClient(api_key=st.secrets["MISTRAL_API_KEY"])
 
                     system_prompt = """Tu es un expert pédagogique francophone. Ton rôle est de créer des QCM de révision à partir d'un texte fourni.
 
