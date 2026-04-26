@@ -1,7 +1,8 @@
 import streamlit as st
 import json
 import re
-from mistralai import Mistral
+from mistralai.client import MistralClient
+from mistralai.models.chat_completion import ChatMessage
 
 # ── Configuration de la page ──────────────────────────────────────────────────
 st.set_page_config(
